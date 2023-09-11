@@ -22,5 +22,5 @@ sed -e "s/$ORGNAME/$MODULENAME/; s/~$ORGNAME/~$MODULENAME/; s/\&$ORGNAME/\&$MODU
 cd Examples/
 ls
 sed -e "s/$ORGNAME/$MODULENAME/; s/~$ORGNAME/~$MODULENAME/; s/\&$ORGNAME/\&$MODULENAME/; s:/$ORGNAME:/$MODULENAME:g;" -i "" *.*
-#cd ../..
-#sed -i "" -e '3i\'$'\n'"add_subdirectory($MODULENAME)" CMakeLists.txt
+cd ../..
+sed -i "" -e '3i\'$'\n'"add_subdirectory($MODULENAME)" CMakeLists.txt
